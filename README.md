@@ -18,13 +18,13 @@ Spotify with Google style
 **Linux and MacOS** in Bash:
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/khanhas/google-spicetify
+git clone https://github.com/D3S0X/google-spicetify
 ```
 
 **Windows** in Powershell:
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/khanhas/google-spicetify
+git clone https://github.com/D3S0X/google-spicetify
 ```
 
 3. Finally, run:
@@ -33,7 +33,7 @@ spicetify config current_theme google-spicetify
 spicetify apply
 ```
 
-There are 4 color schemes you can choose: `Base`, `Dark`, `Gow`, `Spotify`. Change scheme with commands:
+There are 5 color schemes you can choose: `Base`, `Dark`, `DarkGreen`, `Gow`, `Spotify`. Change scheme with commands:
 ```
 spicetify config color_scheme <scheme name>
 spicetify apply
