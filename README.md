@@ -9,6 +9,7 @@ Spotify with Google style
 - Round selected item end like selected playlist
 - Round artist page popular tracks cover image
 - Move left sidebar a bit up
+- Hover to view friend list
 
 ## Previews
 #### LightBlue

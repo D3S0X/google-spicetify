@@ -947,6 +947,34 @@ body.remotebar .view-player .player-bar-wrapper {
 	line-height: 40px !important;
 }
 
+/* Hover to view Friend list */
+
+#view-buddy-list {
+	min-width: 15px !important;
+	width: 15px !important;
+	transition-property: all !important;
+	transition-duration: .5s !important;
+	transition-timing-function: cubic-bezier(.3,0,0,1) !important;
+	opacity: 0;
+}
+
+#view-buddy-list:hover {
+	width: 277px !important;
+	opacity: 1;
+}
+
+.body-container--windows .buddy-list-iframe {
+	height: 100% !important;
+}
+
+.with-buddy-list #view-buddy-list {
+	position: absolute;
+    right: 0px;
+    display: flex;
+    z-index: 999999;
+    height: 100%;
+}
+
 /*Force player bar to has fixed height*/
 
 .view-player {
