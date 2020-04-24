@@ -1,14 +1,23 @@
 # google-spicetify
 Spotify with Google style
 
+## My Changes
+- Improved color schemes
+- Volume always visible
+- Style download progress, offline indicator, tracklist sort arrow
+- Remove artist page separator line
+- Round selected item end like selected playlist
+- Round artist page popular tracks cover image
+- Move left sidebar a bit up
+
 ## Previews
-#### Base
+#### LightBlue
 <img src="https://i.imgur.com/qguGx46.png" alt="img" align="center" width="600px">
 
 #### Gow
 <img src="https://i.imgur.com/XBnjRgk.png" alt="img" align="center" width="600px">
 
-#### Dark
+#### DarkBlue
 <img src="https://i.imgur.com/k6cIQik.png" alt="img" align="center" width="600px">
 
 ## How to install
@@ -33,7 +42,7 @@ spicetify config current_theme google-spicetify
 spicetify apply
 ```
 
-There are 5 color schemes you can choose: `Base`, `Dark`, `DarkGreen`, `Gow`, `Spotify`. Change scheme with commands:
+There are 8 color schemes you can choose: `Base`, `DarkWater`, `DarkBlue`, `LightGreen`, `LightWater`, `LightBlue`, `Gow`, `Spotify`. Change scheme with commands:
 ```
 spicetify config color_scheme <scheme name>
 spicetify apply
