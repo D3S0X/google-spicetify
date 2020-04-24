@@ -5,38 +5,24 @@
 	--section-border-radius: 8px;
 }
 
-@font-face {
-	font-family: "Google Sans Display";
-	src: url("https://d2j0f09xqmv212.cloudfront.net/fonts/GoogleSansDisplayRegular.woff2") format("woff2");
-	font-style: normal;
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Google Sans Display";
-	src: url("https://d2j0f09xqmv212.cloudfront.net/fonts/GoogleSansDisplayMedium.woff2") format("woff2");
-	font-style: normal;
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("https://d2j0f09xqmv212.cloudfront.net/fonts/Roboto.woff2") format("woff2");
-	font-style: normal;
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("https://d2j0f09xqmv212.cloudfront.net/fonts/RobotoMedium.woff2") format("woff2");
-	font-style: normal;
-	font-weight: 500;
-}
-
 body {
 	--glue-font-family: "Google Sans Display", "spotify-circular", "spotify-circular-cyrillic", "spotify-circular-arabic", "spotify-circular-hebrew", "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic Pro", "Meiryo", "MS Gothic", sans-serif;
 	--info-font-family: "Roboto", "spotify-circular", "spotify-circular-cyrillic", "spotify-circular-arabic", "spotify-circular-hebrew", "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic Pro", "Meiryo", "MS Gothic", sans-serif;
 	letter-spacing: 0;
+}
+
+/* Download Progress */
+.sidebar #offline-global-progress {
+	border-top: 1px solid var(--modspotify_slider_bg) !important;
+}
+
+.sidebar #offline-global-progress p {
+	background-color: var(--modspotify_main_fg);
+}
+
+/* Offline indicator */
+.offline-label-wrapper {
+	background-color: var(--modspotify_main_bg);
 }
 
 /*Round corner cover image*/
@@ -233,6 +219,11 @@ form, so I move last cover to the right 20px and first one to the left 20px
 	background: transparent !important;
 }
 
+/* Color tracklist sort arrow */
+.tl-sort-asc::after, .tl-sort-desc::after {
+	color: var(--modspotify_main_fg);
+}
+
 .GlueHeader__background-overlay {
 	background: var(--modspotify_main_bg) !important;
 }
@@ -305,11 +296,7 @@ and add little glowing effect
 */
 
 .navbar-nav::after {
-	width: 100%;
-	height: 1px;
-	bottom: 0;
-	position: absolute;
-	background: var(--modspotify_scrollbar_fg_and_selected_row_bg);
+	display: none;
 }
 
 .nav.navbar-nav li {
@@ -566,6 +553,12 @@ body.remotebar .view-player .player-bar-wrapper {
 
 /* Sidebar */
 
+.LeftSidebar {
+	position: relative;
+	top: -20px;
+	min-height: calc(100% + 20px);
+}
+
 .LeftSidebar .SidebarListItem {
 	font-weight: 400;
 }
@@ -657,7 +650,7 @@ body.remotebar .view-player .player-bar-wrapper {
 }
 
 .tl-row .tl-cell:last-child, .TableRow .TableCell:last-child {
-	border-radius: 0 4px 4px 0;
+	border-radius: 0 100px 100px 0;
 }
 
 @media screen and (max-width: 950px) {
@@ -673,6 +666,12 @@ body.remotebar .view-player .player-bar-wrapper {
 
 .tl-row.current .tl-cell:not(.tl-number), .tl-row.current .tl-cell a:link, .tl-row.current .tl-highlight, .TableCellSong--track-is-playing .TableCellSong__featuredArtist, .TableCellSong--track-is-playing .TableCellSong__text-truncator, .TableCellSong--track-is-playing .TableCellSong__track-name {
 	color: var(--modspotify_main_fg);
+}
+
+/* Popular track cover */
+.tl-album-cover {
+	margin-top: 5px;
+	border-radius: 100px;
 }
 
 .TableCell {
@@ -691,6 +690,16 @@ body.remotebar .view-player .player-bar-wrapper {
 
 .card-horizontal .card-info-content-wrapper, .card-horizontal-size-medium .card-info-wrapper .card-info-content-wrapper {
 	padding-left: 0;
+}
+
+/* Fix card artist image */
+.card-type-artist .card-image {
+	border-radius: 100px !important;
+}
+
+/* Fit overlay to circular artist icon */
+.card-type-artist .card-overlay {
+	border-radius: 500px !important;
 }
 
 /* Sort element: color, remove label */
