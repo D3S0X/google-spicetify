@@ -8,6 +8,7 @@ Spotify with Google style
 - Remove artist page separator line
 - Round selected item end like selected playlist
 - Round artist page popular tracks cover image
+- Hide dots under player buttons
 - Move left sidebar a bit up
 - Hover to view friend list
 
@@ -27,7 +28,7 @@ Using `Base` color scheme
 1. Install [spicetify-cli](https://github.com/khanhas/spicetify-cli) and make sure it applies default theme succesfully.
 2. Run these commands:
   
-**Linux and MacOS** in Bash:
+**Linux and macOS** in Bash:
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
 git clone https://github.com/D3S0X/google-spicetify

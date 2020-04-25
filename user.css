@@ -983,6 +983,14 @@ body.remotebar .view-player .player-bar-wrapper {
 	margin: 0 15px;
 }
 
+/* Hide dots under controls */
+.view-player .player-controls-container .controls .button-repeat:after, 
+.view-player .player-controls-container .controls .button-shuffle:after, 
+.view-player .player-controls-container .controls .button-thumbs-down:after, 
+.view-player .player-controls-container .controls .button-thumbs-up:after {
+	display: none;
+}
+
 /* Player Progress bar */
 
 .view-player .now-playing {
