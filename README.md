@@ -11,6 +11,7 @@ Spotify with Google style
 - Hide dots under player buttons
 - Move left sidebar a bit up
 - Hover to view friend list
+- Block Ads
 
 ## Previews
 Using `Base` color scheme
