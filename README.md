@@ -10,7 +10,7 @@ Spotify with Google style
 - Round artist page popular tracks cover image
 - Hide dots under player buttons
 - Move left sidebar a bit up
-- Hover to view friend list
+- Hover to view friends list (top right)
 - Block Ads
 
 ## Previews
