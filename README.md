@@ -32,13 +32,13 @@ Using `Base` color scheme
 **Linux and macOS** in Bash:
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/D3S0X/google-spicetify
+git clone https://github.com/D3SOX/google-spicetify
 ```
 
 **Windows** in Powershell:
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/D3S0X/google-spicetify
+git clone https://github.com/D3SOX/google-spicetify
 ```
 
 3. Finally, run:
